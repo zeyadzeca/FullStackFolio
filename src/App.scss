@@ -1,0 +1,11 @@
+@import "./globalColor";
+
+.App {
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.subTitle {
+  color: $subTitle;
+}

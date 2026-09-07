@@ -1,0 +1,118 @@
+@import "../../_globalColor";
+
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+
+.greet-main {
+  width: min(1180px, 92%);
+  padding: 28px 10px 10px;
+  margin: 0 auto;
+}
+
+.greeting-main {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.subTitle {
+  color: $subTitle !important;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+.button-greeting-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.greeting-text {
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  line-height: 1.12;
+  color: $textColorDark !important;
+}
+
+.greeting-text-p {
+  font-size: clamp(1rem, 2.2vw, 1.5rem);
+  line-height: 1.6;
+  max-width: 36rem;
+}
+
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+.engineer-kicker {
+  margin: 0 0 8px;
+  color: $accentCyan;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .button-greeting-div {
+    justify-content: center;
+  }
+  .greeting-text,
+  .greeting-text-p {
+    text-align: center;
+  }
+  .greeting-main {
+    display: block;
+  }
+  .greeting-image-div {
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .greeting-text-div .section-orbit,
+  .engineer-kicker {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    width: auto;
+  }
+}

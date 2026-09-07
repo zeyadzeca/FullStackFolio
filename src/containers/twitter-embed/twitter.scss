@@ -1,0 +1,32 @@
+.centerContent {
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.tw-main-div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: min(1180px, 92%);
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .tw-main-div .section-orbit {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.twitter-component {
+  width: auto;
+  padding: 1.5rem;
+}
+
+.timeline-Header-title {
+  font-size: 56px;
+  font-weight: 100 !important;
+}

@@ -1,0 +1,108 @@
+@import "../../_globalColor";
+
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px 14px;
+  width: 100%;
+}
+
+.software-skill-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 88px;
+  animation: floaty 5.5s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+.skill-orb {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 28%,
+    #ffffff 0%,
+    #7c6dff 42%,
+    #1a2450 78%
+  );
+  box-shadow: 0 0 16px rgba(124, 109, 255, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.software-skill-inline > p {
+  color: $subTitle;
+  font-size: 11px;
+  margin: 8px 0 0;
+  text-align: center;
+}
+
+.software-skill-inline i {
+  color: #f5f8ff;
+}
+
+.tone-web .skill-orb {
+  background: radial-gradient(circle at 30% 28%, #ffe8d6, #e34f26 48%, #3a1808);
+}
+
+.tone-0 .skill-orb,
+.tone-react .skill-orb {
+  background: radial-gradient(circle at 30% 28%, #dff8ff, #61dafb 45%, #16324a);
+}
+
+.tone-1 .skill-orb,
+.tone-node .skill-orb {
+  background: radial-gradient(circle at 30% 28%, #e9ffe8, #68a063 48%, #16321d);
+}
+
+.tone-2 .skill-orb,
+.tone-python .skill-orb {
+  background: radial-gradient(circle at 30% 28%, #fff4cc, #3776ab 48%, #1d2a48);
+}
+
+.tone-3 .skill-orb,
+.tone-docker .skill-orb {
+  background: radial-gradient(circle at 30% 28%, #d9f4ff, #2496ed 48%, #12324a);
+}
+
+.tone-4 .skill-orb,
+.tone-sql .skill-orb {
+  background: radial-gradient(circle at 30% 28%, #ffe9f4, #c084fc 48%, #2a1648);
+}
+
+.tone-5 .skill-orb,
+.tone-js .skill-orb,
+.tone-cloud .skill-orb {
+  background: radial-gradient(circle at 30% 28%, #fff7d6, #f7df1e 40%, #3a3208);
+}
+
+.tone-js .skill-orb i,
+.tone-5 .skill-orb i {
+  color: #1a1400;
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .software-skill-inline {
+    animation: none;
+  }
+}

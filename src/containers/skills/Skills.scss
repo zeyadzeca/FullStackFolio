@@ -1,0 +1,45 @@
+@import "../../_globalColor";
+
+.skills-main-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 28px;
+}
+
+.skills-copy {
+  padding: 28px;
+}
+
+.skills-orbs-div {
+  width: 100%;
+}
+
+.skills-heading {
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 500;
+  color: $textColorDark;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+@media (max-width: 768px) {
+  .skills-heading,
+  .skills-text-subtitle {
+    text-align: center;
+  }
+  .skills-copy .section-orbit {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+  }
+  .skills-copy {
+    margin: 0;
+  }
+  .skills-text {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,8 @@
+@import "../components/spaceBackground/spaceTheme";
+@import "../_globalColor";
+
+.dark-mode {
+  background-color: transparent;
+  color: $textColorDark;
+  transition: 0.2s;
+}

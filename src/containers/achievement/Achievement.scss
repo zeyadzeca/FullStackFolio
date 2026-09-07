@@ -1,0 +1,25 @@
+@import "../../_globalColor";
+
+.achievement-heading {
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px;
+}
+
+.achievement-subtitle {
+  text-transform: none;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+@media (max-width: 768px) {
+  .achievement-heading,
+  .achievement-subtitle {
+    text-align: center;
+  }
+}

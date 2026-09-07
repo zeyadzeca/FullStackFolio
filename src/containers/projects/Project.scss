@@ -1,0 +1,22 @@
+.project-title {
+  font-size: clamp(1.8rem, 4vw, 3.1rem);
+  font-weight: 500;
+  line-height: normal;
+  color: #f5f8ff;
+}
+
+.repo-cards-div-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .project-title {
+    text-align: center;
+  }
+  #opensource .section-orbit {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

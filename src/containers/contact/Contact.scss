@@ -1,0 +1,93 @@
+@import "../../_globalColor";
+
+.contact-div-main {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px;
+}
+
+.dark-mode a {
+  color: $textColorDark;
+}
+
+.contact-div-main > * {
+  flex: 1;
+}
+
+.contact-title {
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+.contact-copy {
+  margin-top: 0;
+}
+
+.contact-detail,
+.contact-detail-email {
+  margin-top: 20px;
+  font-size: clamp(1.1rem, 2.4vw, 2rem);
+  font-weight: 500;
+  color: $accentCyan;
+  text-decoration: none;
+}
+
+.contact-detail:hover,
+.contact-detail-email:hover {
+  color: $textColorDark;
+  text-shadow: 0 0 12px $contactDetailHoverTS;
+  transition: all 0.3s;
+}
+
+.contact-subtitle {
+  text-transform: none;
+  color: $subTitle;
+}
+
+.contact-text-div {
+  margin-top: 1.5rem;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.contact-actions .main-button {
+  margin-top: 0;
+}
+
+.contact-margin-top {
+  margin-top: 4rem;
+}
+
+.contact-image-div {
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-div-main {
+    flex-direction: column;
+  }
+
+  .contact-title,
+  .contact-subtitle,
+  .contact-copy,
+  .contact-text-div {
+    text-align: center;
+  }
+
+  .contact-actions {
+    justify-content: center;
+  }
+
+  .contact-image-div {
+    display: block;
+    width: min(280px, 80%);
+    margin: 0 auto;
+  }
+}
