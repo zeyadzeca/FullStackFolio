@@ -273,9 +273,7 @@ This project is designed, developed, and maintained by **ZNteam**.
 
 ZNteam is the team behind FullStackFolio: building the template, maintaining it, and improving the portfolio experience for developers and professionals.
 
-- GitHub: [ZNTEAM_GITHUB_URL]
-- Repository: [PROJECT_REPOSITORY_URL]
-- Website: [PROJECT_WEBSITE_URL]
+
 
 ---
 
